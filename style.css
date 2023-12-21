@@ -1,9 +1,59 @@
 /* Alejandro Barrionuevo Rosado */
 
+/* animaciones */
+
+@keyframes ani1 {
+  from {
+    left: 10px;
+    /* background-color: red; */
+  }
+  50% {
+    /* background-color: green; */
+  }
+
+  to {
+    left: 220px;
+    /* background-color: blue; */
+  }
+}
+
+/* header */
+
+header{
+  clear: right;
+  background-color: darkred;
+  color: white;
+  text-align: right;
+}
+
+#tituloG{
+  position: fixed;
+  left: 20px;
+  width: 600px;
+  height: 100px;
+  -webkit-animation: ani1 2s ease-in-out 1s infinite alternate;
+  animation: ani1 2s ease-in-out 1s infinite alternate;
+  text-align: center;
+  color: white;
+  font-family: 'Christmas', cursive;
+}
+
+#bolasNavidad{
+  display: flex;
+  align-items: right;
+  clear: right;
+}
+
+#nombre{
+  opacity:.5;
+}
+
+/* imagen lateral */
+
 div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 20px;
 }
 
