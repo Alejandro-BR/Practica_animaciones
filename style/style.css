@@ -5,58 +5,103 @@
 @keyframes ani1 {
   from {
     left: 10px;
-    /* background-color: red; */
-  }
-  50% {
-    /* background-color: green; */
   }
 
   to {
     left: 220px;
-    /* background-color: blue; */
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    color: darkred;
+  }
+  50%{
+    color: #AB822D;
+  }
+  100% {
+    color: darkred;
   }
 }
 
 /* header */
 
-header{
+header {
   clear: right;
   background-color: darkred;
   color: white;
   text-align: right;
 }
 
-#tituloG{
-  position: fixed;
+#tituloG {
+  /* posicion y forma */
+  position: absolute;
   left: 20px;
   width: 600px;
   height: 100px;
+  /* animacion */
   -webkit-animation: ani1 2s ease-in-out 1s infinite alternate;
   animation: ani1 2s ease-in-out 1s infinite alternate;
+  /* formato del texto */
   text-align: center;
   color: white;
   font-family: 'Christmas', cursive;
 }
 
-#bolasNavidad{
+#bolasNavidad {
+  /*que no se mueva*/
+  position: absolute;
+  /*altura desde el techo*/
+  top: 8px;
+  /*espacio desde la derecha de la pagina*/
+  right: 20px;
+}
+
+#nombre {
+  opacity: .5;
+}
+
+/* main */
+
+#felizN {
   display: flex;
-  align-items: right;
-  clear: right;
+  /* formato de texto */
+  font-size: 50px;
+  font-family: 'Christmas', cursive;
+  text-align: left;
+  /* animacion */
+  animation: ani2 3s infinite;
 }
 
-#nombre{
-  opacity:.5;
-}
-
-/* imagen lateral */
-
-div {
+#barraMovimiento{
   display: flex;
-  justify-content: space-between;
-  align-items: left;
-  padding: 20px;
+  background-color: darkred;
+  /* tamaño */
+  width: 600px;
+  height: 10px;
+  left: 220px;
+  /*cada 0.5s aumenta*/
+  transition: width 0.5s; 
 }
 
-img {
-  max-width: 100%;
+#barraMovimiento:hover {
+  width: 1000px;
+  left: 220px;
+}
+
+#arbolnavidad {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+/* footer */
+
+footer{
+  background-color: #AB822D;
+}
+
+.textoFooter{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
