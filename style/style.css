@@ -16,9 +16,11 @@
   0% {
     color: darkred;
   }
-  50%{
+
+  50% {
     color: #AB822D;
   }
+
   100% {
     color: darkred;
   }
@@ -73,7 +75,7 @@ header {
   animation: ani2 3s infinite;
 }
 
-#barraMovimiento{
+#barraMovimiento {
   display: flex;
   background-color: darkred;
   /* tamaño */
@@ -81,13 +83,14 @@ header {
   height: 10px;
   left: 220px;
   /*cada 0.5s aumenta*/
-  transition: width 0.5s; 
+  transition: width 0.5s;
 }
 
 #barraMovimiento:hover {
-  width: 1000px;
+  width: 1300px;
   left: 220px;
-  cursor: pointer; /*Cambiar el cursosr para que sea una mano */
+  cursor: pointer;
+  /*Cambiar el cursosr para que sea una mano */
 }
 
 #arbolnavidad {
@@ -96,20 +99,18 @@ header {
   padding: 50px;
 }
 
-iframe{
+iframe {
   float: left;
   padding: 40px;
 }
 
 /* footer */
 
-footer{
+footer {
   background-color: #AB822D;
 }
 
-.textoFooter{
+.textoFooter {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
-
-
