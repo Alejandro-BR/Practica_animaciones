@@ -89,8 +89,9 @@ header {
 #barraMovimiento:hover {
   width: 1300px;
   left: 220px;
+  background-color: #AB822D;
+  /*Cambiar el cursor para que sea una mano */
   cursor: pointer;
-  /*Cambiar el cursosr para que sea una mano */
 }
 
 #arbolnavidad {
